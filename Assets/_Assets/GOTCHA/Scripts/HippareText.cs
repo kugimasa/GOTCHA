@@ -7,7 +7,8 @@ public class HippareText : MonoBehaviour
 {
     [Header("Variables")]
     [SerializeField] private VariableFloat m_textScaleY;
-
+    [SerializeField] private VariableFloat m_textPositionY;
+    
     private RectTransform m_rectTransform;
 
     private void Start()
@@ -18,6 +19,8 @@ public class HippareText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        m_rectTransform.localPosition = new Vector3(0, m_textPositionY,0);
         m_rectTransform.localScale = new Vector3(1, m_textScaleY, 1);
     }
 }

@@ -7,6 +7,7 @@ public class MouthImage : MonoBehaviour
 {
     [SerializeField] private VariableFloat m_positionY;
     [SerializeField] private VariableFloat m_rotationZ;
+    [SerializeField] private VariableBool m_mouthMove;
     
     private RectTransform m_rectTransform;
 
@@ -18,6 +19,9 @@ public class MouthImage : MonoBehaviour
     void Update()
     {
         m_rectTransform.localRotation = Quaternion.Euler(0,0,m_rotationZ);
-        m_rectTransform.localPosition = new Vector3(1, m_positionY, 1);
+        if (m_mouthMove)
+        {
+            m_rectTransform.localPosition = new Vector3(6.6f, m_positionY, 0.0f);
+        }
     }
 }

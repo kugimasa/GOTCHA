@@ -18,6 +18,6 @@ public class NoseImage : MonoBehaviour
     void Update()
     {
         m_rectTransform.localRotation = Quaternion.Euler(0,0,m_rotationZ);
-        m_rectTransform.localPosition = new Vector3(m_scale, m_scale, 1);
+        m_rectTransform.localScale = new Vector3(m_scale, m_scale, 1);
     }
 }
