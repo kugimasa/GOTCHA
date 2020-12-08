@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-775306007401276527
+--- !u!114 &-8003205617619742197
 MonoBehaviour:
   m_ObjectHideFlags: 8
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,21 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 946a50b20c4ae6d4b903a43cd51e62ae, type: 3}
-  m_Name: 
+  m_Name: OngotchapigRotionChanged
   m_EditorClassIdentifier: 
---- !u!114 &-589381066043114352
-MonoBehaviour:
-  m_ObjectHideFlags: 8
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3ba7ba667e86a418fb8622744dbc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_variable: {fileID: 11400000}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +22,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10649c666b5afe542b8c559979adf07e, type: 3}
-  m_Name: minipigRotation
+  m_Name: gotchapigRotion
   m_EditorClassIdentifier: 
   m_value: 0
-  m_onValueChanged: {fileID: -775306007401276527}
+  m_onValueChanged: {fileID: -8003205617619742197}
+--- !u!114 &5872667640077925182
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3ba7ba667e86a418fb8622744dbc8a, type: 3}
+  m_Name: gotchapigRotionReadonly
+  m_EditorClassIdentifier: 
+  m_variable: {fileID: 11400000}

@@ -14,6 +14,8 @@ public class GotchaPigMove : MonoBehaviour
     void Start()
     {
         m_rectTransform = GetComponent<RectTransform>();
+        m_position.Value = 333;
+        m_rotation.Value = 0;
     }
 
     void Update()

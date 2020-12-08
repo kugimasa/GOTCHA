@@ -608,6 +608,7 @@ GameObject:
   - component: {fileID: 952716699}
   - component: {fileID: 952716701}
   - component: {fileID: 952716700}
+  - component: {fileID: 952716702}
   m_Layer: 5
   m_Name: GotchaPig
   m_TagString: Untagged
@@ -671,6 +672,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952716698}
   m_CullTransparentMesh: 0
+--- !u!114 &952716702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952716698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fadd0aac404f744a9081d1cf764ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rotation: {fileID: 11400000, guid: 96dc069e23409492689994b91cce0318, type: 2}
+  m_position: {fileID: 11400000, guid: 4f866b514880cb847b7d7a9780ee24eb, type: 2}
 --- !u!1 &1067844954
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704264316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 217, z: 0}
+  m_LocalPosition: {x: 540, y: 333, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -802,6 +817,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -672360603545233786, guid: d17131f7579754fbe8e161d43fb87216, type: 2}
     value: {fileID: 245486951}
+  - key: {fileID: 2088499500657553837, guid: d17131f7579754fbe8e161d43fb87216, type: 2}
+    value: {fileID: 952716698}
+  - key: {fileID: 7357729802364031499, guid: d17131f7579754fbe8e161d43fb87216, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2280385961535792336, guid: d17131f7579754fbe8e161d43fb87216, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1704264319
