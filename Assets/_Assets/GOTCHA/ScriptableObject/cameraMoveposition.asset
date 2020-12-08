@@ -37,5 +37,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10649c666b5afe542b8c559979adf07e, type: 3}
   m_Name: cameraMoveposition
   m_EditorClassIdentifier: 
-  m_value: 0
+  m_value: 240
   m_onValueChanged: {fileID: -1605317211564646056}

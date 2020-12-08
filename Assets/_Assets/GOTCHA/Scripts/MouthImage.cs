@@ -14,6 +14,9 @@ public class MouthImage : MonoBehaviour
     void Start()
     {
         m_rectTransform = GetComponent<RectTransform>();
+        m_positionY.Value = 436;
+        m_rotationZ.Value = 0;
+        m_mouthMove.Value = false;
     }
 
     void Update()

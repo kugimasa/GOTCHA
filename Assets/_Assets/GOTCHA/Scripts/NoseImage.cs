@@ -13,6 +13,7 @@ public class NoseImage : MonoBehaviour
     void Start()
     {
         m_rectTransform = GetComponent<RectTransform>();
+        m_rotationZ.Value = 0;
     }
 
     void Update()
