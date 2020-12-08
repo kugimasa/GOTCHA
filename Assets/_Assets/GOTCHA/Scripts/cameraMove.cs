@@ -10,6 +10,9 @@ public class cameraMove : MonoBehaviour
     [SerializeField] private VariableFloat m_cameraFOV;
     [SerializeField] private VariableFloat m_positionY;
 
+    [SerializeField] private float _cameraFOV = default;
+    [SerializeField] private float _postionY = default;
+    
     private Transform m_transform;
     private Camera m_camera;
 
@@ -17,6 +20,9 @@ public class cameraMove : MonoBehaviour
     {
         m_transform = GetComponent<Transform>();
         m_camera = GetComponent<Camera>();
+        m_cameraFOV.Value = _cameraFOV;
+        m_positionY.Value = _postionY;
+
     }
 
     void Update()
