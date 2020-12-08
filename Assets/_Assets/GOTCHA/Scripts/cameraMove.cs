@@ -27,7 +27,7 @@ public class cameraMove : MonoBehaviour
 
     void Update()
     {
-        m_transform.position = new Vector3(540,m_positionY,-4250);
+        m_transform.position = new Vector3(540,m_positionY,-2800);
         m_camera.fieldOfView = m_cameraFOV;
     }
 }
