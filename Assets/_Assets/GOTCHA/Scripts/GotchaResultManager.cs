@@ -35,4 +35,9 @@ public class GotchaResultManager : MonoBehaviour
             m_resultText = "真珠10個ゲット";
         }
     }
+
+    public void TweetResult()
+    {
+        StartCoroutine(TweetWithScreenShot.TweetManager.TweetWithScreenShot(m_resultText));
+    }
 }
