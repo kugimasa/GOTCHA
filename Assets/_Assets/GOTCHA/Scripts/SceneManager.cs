@@ -9,7 +9,8 @@ public class SceneManager : MonoBehaviour
 {
     private string m_currentSceneName;
     [SerializeField] private string m_nextSceneName = default;
-
+    [SerializeField] private SoundManager m_soundManager = default;
+    
     private void Start()
     {
         m_currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
@@ -21,6 +22,7 @@ public class SceneManager : MonoBehaviour
         {
             if (Input.anyKeyDown)
             {
+                m_soundManager.PlaySelected();
                 SceneLoader.LoadScene(m_nextSceneName);
             }
         }
@@ -28,6 +30,6 @@ public class SceneManager : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneLoader.LoadScene(m_nextSceneName);        
+        SceneLoader.LoadScene(m_nextSceneName);      
     }
 }

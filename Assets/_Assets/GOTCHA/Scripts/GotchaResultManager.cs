@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GotchaResultManager : MonoBehaviour
 {
+    [SerializeField] private AudioClip resultSE;
+    [SerializeField] private AudioSource m_audioSource;
     [SerializeField] private GameObject Result1;
     [SerializeField] private GameObject Result2;
     [SerializeField] private GameObject Result3;
@@ -12,6 +14,7 @@ public class GotchaResultManager : MonoBehaviour
     private string m_resultText;
     void Start()
     {
+        m_audioSource.PlayOneShot(resultSE);
         Result1.SetActive(false);
         Result2.SetActive(false);
         Result3.SetActive(false);

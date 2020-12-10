@@ -65,3 +65,7 @@ crashlytics-build.properties
 #TweetTemplate
 /Assets/TweeWithScreenShot
 /Assets/TweeWithScreenShot.meta
+
+#Audio
+/Assets/_Assets/GOTCHA/Audio
+/Assets/_Assets/GOTCHA/Audio.meta
