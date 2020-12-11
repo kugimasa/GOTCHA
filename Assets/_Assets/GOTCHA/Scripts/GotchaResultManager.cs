@@ -12,8 +12,10 @@ public class GotchaResultManager : MonoBehaviour
     [SerializeField] private GameObject Result3;
     [SerializeField] private GameObject Result4;
     private string m_resultText;
+    private string m_urlText;
     void Start()
     {
+        m_urlText = "\nhttps://unityroom.com/games/butasuto";
         m_audioSource.PlayOneShot(resultSE);
         Result1.SetActive(false);
         Result2.SetActive(false);
@@ -41,6 +43,6 @@ public class GotchaResultManager : MonoBehaviour
 
     public void TweetResult()
     {
-        StartCoroutine(TweetWithScreenShot.TweetManager.TweetWithScreenShot(m_resultText));
+        StartCoroutine(TweetWithScreenShot.TweetManager.TweetWithScreenShot(m_resultText+m_urlText));
     }
 }
