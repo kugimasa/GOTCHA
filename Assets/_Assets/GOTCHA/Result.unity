@@ -790,7 +790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 40.600006, y: 389}
+  m_AnchoredPosition: {x: 40.599976, y: 389}
   m_SizeDelta: {x: -248.25128, y: -865.0005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &71904982
@@ -4759,8 +4759,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f75461f15a54ca68f6a1c7a03ff532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hashTags: []
-  clientID: b83b34019f3e148
+  hashTags:
+  - butasuto
+  clientID: 3125de15b24717a
 --- !u!4 &617349146
 Transform:
   m_ObjectHideFlags: 0

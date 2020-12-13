@@ -15,7 +15,7 @@ public class GotchaResultManager : MonoBehaviour
     private string m_urlText;
     void Start()
     {
-        m_urlText = "\nhttps://unityroom.com/games/butasuto";
+        m_urlText = " https://unityroom.com/games/butasuto";
         m_audioSource.PlayOneShot(resultSE);
         Result1.SetActive(false);
         Result2.SetActive(false);
